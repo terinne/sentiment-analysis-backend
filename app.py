@@ -64,7 +64,7 @@ def create_token():
         access_token = create_access_token(identity=username_env)
         return jsonify({ "token": access_token, "username": username_env })
     else:
-        return jsonify('login failed')
+        return jsonify('Login failed'), 401
 
 @app.route("/")
 def home():
