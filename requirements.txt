@@ -2,3 +2,5 @@ flask
 flask_cors
 pandas
 scikit-learn
+python-dotenv
+flask-jwt-extended

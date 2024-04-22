@@ -13,8 +13,10 @@ RUN pip install --no-cache-dir --progress-bar off -r requirements.txt
 # make port 8080 available to the world outside this container
 EXPOSE 8080
 
-# test env variable
-# ENV TEST-1=TEST
+# env variables
+ENV USER_NAME=cc2024
+ENV PASSWORD=lapinamk
+ENV JWT_SECRET=GLKKEGJI25LKJL16762TFqQWv1p5vssleFEL215161AGGgegEEAGQPQ
 
 # run app.py when container launches
 CMD ["python", "app.py"]
