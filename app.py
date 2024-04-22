@@ -63,6 +63,8 @@ def create_token():
     if username_req == username_env and password_req == password_env:
         access_token = create_access_token(identity=username_env)
         return jsonify({ "token": access_token, "username": username_env })
+    else:
+        return jsonify('login failed')
 
 @app.route("/")
 def home():
